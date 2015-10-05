@@ -11,6 +11,10 @@ $isik=[
 
 $eesnimi_algab_vokaaliga=false;
 
+if($eesnimi_algab_vokaaliga){
+    echo "Nimi algab vokaaliga";
+}
+
 echo $isik["eesnimi"];
 echo $isik["perenimi"];
 echo "(". $isik["vanus"] .")";
