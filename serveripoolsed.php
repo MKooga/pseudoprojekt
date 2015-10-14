@@ -2,11 +2,13 @@
 echo "Tere maailm";
 echo "<br>";
 
-$isik=[
-    "eesnimi"=>"Martin ",
-    "perenimi"=>"Kooga ",
-    "vanus"=>23,
-];
+class pseudo{}
+
+$isik=new pseudo();
+$isik->eesnimi="Martin";
+$isik->perenimi="Kooga";
+$isik->vanus=23;
+$isik->sugu="mees";
 
 
 $eesnimi_algab_vokaaliga=false;
@@ -15,10 +17,7 @@ if($eesnimi_algab_vokaaliga){
     echo "Nimi algab vokaaliga";
 }
 
-echo $isik["eesnimi"];
-echo $isik["perenimi"];
-echo "(". $isik["vanus"] .")";
-echo "<br>";
+print_r($isik);
 
 
 
