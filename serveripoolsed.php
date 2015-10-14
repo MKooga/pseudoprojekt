@@ -10,8 +10,8 @@ $isik->perenimi="Kooga";
 $isik->vanus=23;
 $isik->sugu="mees";
 
-
-
+$float1=1.23;
+$float2=2.34;
 
 function eesnimi_algab_vokaaliga($tüüp){
 
@@ -24,12 +24,12 @@ function eesnimi_algab_vokaaliga($tüüp){
 
 }
 
-if(eesnimi_algab_vokaaliga($isik)){
-    echo "Nimi algab vokaaliga";
-}
+if(!eesnimi_algab_vokaaliga($isik)){
+    echo "Nimi algab vokaaliga"."<br>";
+    }
 
 print_r($isik);
-
-
+echo "<br>";
+echo $float1+$float2;
 
 ?>
