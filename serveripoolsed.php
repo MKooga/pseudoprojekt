@@ -31,5 +31,6 @@ if(!eesnimi_algab_vokaaliga($isik)){
 print_r($isik);
 echo "<br>";
 echo $float1+$float2;
-
+echo "<br>";
+echo htmlspecialchars($_GET["koer"]);
 ?>
