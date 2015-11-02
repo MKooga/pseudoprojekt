@@ -1,3 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+
+<form action="?" method="post">
+    Kass: <input name="kass"><br>
+    <input type="submit">
+</form>
+
+
+</body>
+</html>
+
+
+
 <?php
 echo "Tere maailm";
 echo "<br>";
@@ -33,4 +52,7 @@ echo "<br>";
 echo $float1+$float2;
 echo "<br>";
 echo htmlspecialchars($_GET["koer"]);
+if($_POST["kass"]){
+    echo "Kass oli ".$_POST["kass"];
+}
 ?>
